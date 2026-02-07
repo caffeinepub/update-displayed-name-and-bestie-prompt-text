@@ -1,13 +1,57 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-07T22:09:53.161Z",
-  "summary": "REQ-5 appears implemented: the home screen now visibly displays the name \"Maniha\" in the main content area while keeping the main heading exactly \"Will you be my bestie forever?\".",
-  "missing_requirements": [],
-  "hallucinated_features": [],
-  "confidence": 0.86,
+  "generatedAt": "2026-02-07T22:36:16.255Z",
+  "summary": "REQ-7 asks to deploy/publish the already-updated Valentine page so the shareable link shows the exact prompt text live. The diff only adds documentation and code/config changes; it does not provide evidence of an actual production deployment/publish action tied to the specified shareable URL. Several unrequested changes were introduced (publishing doc, cache-control headers, backend change, and additional UI copy/behavior).",
+  "missing_requirements": [
+    {
+      "id": "REQ-7",
+      "requirement": "Deploy/publish the current application version so the updated home-screen prompt text (\"Maniha will you be my valentines\") is live and visible at https://caffeine.ai/chat/019c2016-f519-7768-a217-0bd548a606d8.",
+      "reason": "The diff contains no evidence of an actual deployment/publish step or configuration that would ensure the specified shareable link now serves the latest deployed (non-draft) version. It only adds a manual checklist document and local code changes; acceptance criteria about the live link and hard refresh/incognito behavior cannot be confirmed from the diff.",
+      "evidence": [
+        "frontend/PUBLISHING.md",
+        "frontend/src/App.tsx",
+        "frontend/index.html"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Added a new publishing/deployment checklist document (Publishing Checklist) with build/deploy steps and verification items.",
+      "reason": "REQ-7 is to deploy/publish the current version so the link shows updated text; it does not request new documentation.",
+      "evidence": [
+        "frontend/PUBLISHING.md"
+      ]
+    },
+    {
+      "description": "Added cache-control meta headers (no-cache/no-store/must-revalidate) to the HTML entry point.",
+      "reason": "Not requested by REQ-7; it changes runtime caching behavior rather than performing the deployment itself.",
+      "evidence": [
+        "frontend/index.html"
+      ]
+    },
+    {
+      "description": "Modified backend actor to include blob-storage/Mixin storage logic.",
+      "reason": "Not requested by REQ-7 (which is about publishing the already-updated frontend copy). This is a backend behavior change unrelated to the stated deployment requirement.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Introduced/changed additional user-facing UI text/behavior beyond the specified main prompt, including hint text with emojis and other interaction/UI elements described in summaries.",
+      "reason": "BuildRequest non-goals explicitly say not to change existing UI copy beyond what is already implemented and not to add new features/flows; REQ-7 only concerns publishing so the existing updated prompt is live.",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "confidence": 0.74,
   "changed_files": [
+    "backend/main.mo",
     "frontend-file-summaries.txt",
+    "frontend/PUBLISHING.md",
+    "frontend/index.html",
     "frontend/src/App.tsx",
     "project_state.json"
   ]

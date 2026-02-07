@@ -1,21 +1,31 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Display “Maniha” on the home screen",
+  "title": "Publish updated Valentine home prompt text",
   "requirements": [
     {
-      "id": "REQ-5",
-      "summary": "Show the name “Maniha” in the home screen content while keeping the main heading text unchanged.",
+      "id": "REQ-7",
+      "summary": "Ensure the deployed/public Valentine page shows the exact updated home-screen prompt text and includes basic cache-busting guidance to help users see the latest published version at the shareable link.",
       "acceptanceCriteria": [
-        "On the initial/home screen, the name \"Maniha\" is displayed in the main content area (not only in metadata like the HTML title).",
-        "The main question heading remains exactly: \"Will you be my bestie forever?\".",
-        "All user-facing text remains in English (the name \"Maniha\" is displayed as provided)."
+        "Opening https://caffeine.ai/chat/019c2016-f519-7768-a217-0bd548a606d8 shows the latest deployed version (not a draft-only state).",
+        "The home screen main prompt text displays exactly: \"Maniha will you be my valentines\".",
+        "A hard refresh / incognito window still shows the updated deployed content."
       ],
       "file_operations": [
         {
           "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Update the home screen main content to visibly display the name \"Maniha\" (e.g., as a subtitle/line near the existing heading) while keeping the heading text exactly \"Will you be my bestie forever?\" and leaving existing Yes/No behavior and animations unchanged."
+          "description": "Confirm the home screen main prompt text renders exactly \"Maniha will you be my valentines\" (including capitalization and spelling) and centralize it as a single constant to prevent accidental divergence during future edits."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Add standard no-cache meta headers (Cache-Control/Pragma/Expires) to reduce the chance of stale cached HTML after publishing, improving reliability of hard refresh/incognito validation."
+        },
+        {
+          "path": "frontend/PUBLISHING.md",
+          "operation": "create",
+          "description": "Document the minimal publish/release checklist for making the current version live (build, publish, and post-deploy verification steps including hard refresh/incognito checks against the shareable link)."
         }
       ]
     }

@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { FloatingHearts } from '@/components/FloatingHearts';
 import { SuccessMessage } from '@/components/SuccessMessage';
 
+// Centralized prompt text to ensure consistency
+const VALENTINE_PROMPT = "Maniha will you be my valentines";
+
 function App() {
   const [noClickCount, setNoClickCount] = useState(0);
   const [showSuccess, setShowSuccess] = useState(false);
@@ -48,14 +51,9 @@ function App() {
             </div>
           </div>
 
-          {/* Name */}
-          <p className="text-3xl md:text-4xl font-semibold text-white drop-shadow-text animate-slide-up">
-            Maniha
-          </p>
-
           {/* Question */}
           <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-text animate-slide-up">
-            Will you be my bestie forever?
+            {VALENTINE_PROMPT}
           </h1>
 
           {/* Buttons */}

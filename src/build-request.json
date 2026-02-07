@@ -1,35 +1,37 @@
 {
   "kind": "build_request",
-  "title": "Display the name Maniha on the home screen",
+  "title": "Publish the updated Valentine page copy live",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-5",
-      "text": "Add the name \"Maniha\" to the home screen content so it is visibly displayed to the user while keeping the main heading text exactly \"Will you be my bestie forever?\".",
-      "target": "frontend",
+      "id": "REQ-7",
+      "text": "Deploy/publish the current application version so the updated home-screen prompt text (\"Maniha will you be my valentines\") is live and visible at the shareable link: https://caffeine.ai/chat/019c2016-f519-7768-a217-0bd548a606d8.",
+      "target": "unknown",
       "source": {
         "messageIds": [
-          "msg-4"
+          "msg-user-1"
         ],
         "quotes": [
-          "Add the name maniha"
+          "Make the changes live",
+          "https://caffeine.ai/chat/019c2016-f519-7768-a217-0bd548a606d8"
         ]
       },
       "acceptanceCriteria": [
-        "On the initial/home screen, the name \"Maniha\" is displayed in the main content area (not only in metadata like the HTML title).",
-        "The main question heading remains exactly: \"Will you be my bestie forever?\".",
-        "All user-facing text remains in English (the name \"Maniha\" is displayed as provided)."
+        "Opening https://caffeine.ai/chat/019c2016-f519-7768-a217-0bd548a606d8 shows the latest deployed version (not a draft-only state).",
+        "The home screen main prompt text displays exactly: \"Maniha will you be my valentines\".",
+        "A hard refresh / incognito window still shows the updated deployed content."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files under frontend/src/components/ui or any frontend immutable paths listed in SYSTEM_CONTEXT.",
-    "Do not introduce backend dependencies for displaying the name; this should be a frontend-only text/content change."
+    "Keep all user-facing text in English.",
+    "Do not modify any files under frontend/src/components/ui or other paths listed as immutable in SYSTEM_CONTEXT.",
+    "Do not introduce additional backend services; keep Motoko logic (if any) within backend/main.mo single-actor architecture."
   ],
   "nonGoals": [
-    "Do not change the existing Yes/No button behavior or animations.",
-    "Do not change the success screen wording unless required to display the name there (not requested).",
-    "Do not revert the main heading back to Valentine-themed phrasing."
+    "Changing any existing UI copy beyond what is already implemented.",
+    "Adding new features, flows, or authentication changes.",
+    "Creating or modifying images/assets."
   ],
   "imageRequirements": {
     "required": [],

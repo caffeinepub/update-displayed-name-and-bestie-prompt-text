@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-07T22:09:53.164Z",
+  "generatedAt": "2026-02-07T22:36:16.257Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,24 +11,34 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-5",
-        "summary": "Add the name \"Maniha\" to the home screen content so it is visibly displayed to the user while keeping the main heading text exactly \"Will you be my bestie forever?\".",
+        "id": "REQ-7",
+        "summary": "Deploy/publish the current application version so the updated home-screen prompt text (\"Maniha will you be my valentines\") is live and visible at the shareable link: https://caffeine.ai/chat/019c2016-f519-7768-a217-0bd548a606d8.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/App.tsx"
+          "frontend/src/App.tsx",
+          "frontend/index.html",
+          "frontend/PUBLISHING.md"
         ],
         "matchedFiles": [
-          "frontend/src/App.tsx"
+          "frontend/src/App.tsx",
+          "frontend/index.html",
+          "frontend/PUBLISHING.md"
         ]
       }
     ]
   },
   "changedFiles": [
+    "backend/main.mo",
     "build-request.json",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
+    "frontend/PUBLISHING.md",
+    "frontend/index.html",
     "frontend/src/App.tsx",
+    "frontend/src/backend.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

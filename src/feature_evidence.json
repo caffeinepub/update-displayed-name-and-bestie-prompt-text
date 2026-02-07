@@ -2,9 +2,11 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-the-name-maniha-to-the-home-screen-content-so-it-is-visibly-displayed-to-the-user-while-keeping-the-main-heading-text-exactly-will-you-be-my-bestie-forever",
-      "featureTitle": "Add the name \"Maniha\" to the home screen content so it is visibly displayed to the user while keeping the main heading text exactly \"Will you be my bestie forever?\".",
+      "featureId": "feature-deploy-publish-the-current-application-version-so-the-updated-home-screen-prompt-text-maniha-will-you-be-my-valentines-is-live-and-visible-at-the-shareable-link-https-caffeine-ai-chat-019c2016-f519-7768-a217-0bd548a606d8",
+      "featureTitle": "Deploy/publish the current application version so the updated home-screen prompt text (\"Maniha will you be my valentines\") is live and visible at the shareable link: https://caffeine.ai/chat/019c2016-f519-7768-a217-0bd548a606d8.",
       "files": [
+        "frontend/PUBLISHING.md",
+        "frontend/index.html",
         "frontend/src/App.tsx"
       ],
       "components": [
@@ -16,7 +18,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-5"
+        "REQ-7"
       ],
       "confidence": "high"
     }

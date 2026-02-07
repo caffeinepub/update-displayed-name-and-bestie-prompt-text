@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 9,
-  "summary": "Project to update Valentine page copy: replace displayed name from “Bisma” to “Maniha” and update the main prompt text to “Will you be my bestie forever?” (instead of the previous Valentine phrasing).",
+  "projectStateVersion": 13,
+  "summary": "Project to update the Valentine page copy to display the name “Maniha” and change the main prompt/heading text to a Valentine phrasing requested by the user: “Maniha will you be my valentines”.",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
@@ -45,6 +45,22 @@
         "REQ-5"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-home-screen-main-prompt-text-to-display-exactly-maniha-will-you-be-my-valentines-english-replacing-the-current-will-you-be-my-bestie-forever-prompt",
+      "title": "Update the home screen main prompt text to display exactly: \"Maniha will you be my valentines\" (English), replacing the current \"Will you be my bestie forever?\" prompt.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-deploy-publish-the-current-application-version-so-the-updated-home-screen-prompt-text-maniha-will-you-be-my-valentines-is-live-and-visible-at-the-shareable-link-https-caffeine-ai-chat-019c2016-f519-7768-a217-0bd548a606d8",
+      "title": "Deploy/publish the current application version so the updated home-screen prompt text (\"Maniha will you be my valentines\") is live and visible at the shareable link: https://caffeine.ai/chat/019c2016-f519-7768-a217-0bd548a606d8.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -57,6 +73,18 @@
     {
       "id": "AR-3",
       "summary": "Update the draft/main prompt text to “Will you be my bestie forever?”",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Update the main on-page prompt/heading copy to the requested Valentine wording: “Maniha will you be my valentines”",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Deploy/publish the updated Valentine page changes live (production/shareable link)",
       "reqIds": [],
       "status": "pending"
     }
