@@ -1,0 +1,38 @@
+{
+  "kind": "build_request",
+  "title": "Display the name Maniha on the home screen",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Add the name \"Maniha\" to the home screen content so it is visibly displayed to the user while keeping the main heading text exactly \"Will you be my bestie forever?\".",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Add the name maniha"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On the initial/home screen, the name \"Maniha\" is displayed in the main content area (not only in metadata like the HTML title).",
+        "The main question heading remains exactly: \"Will you be my bestie forever?\".",
+        "All user-facing text remains in English (the name \"Maniha\" is displayed as provided)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui or any frontend immutable paths listed in SYSTEM_CONTEXT.",
+    "Do not introduce backend dependencies for displaying the name; this should be a frontend-only text/content change."
+  ],
+  "nonGoals": [
+    "Do not change the existing Yes/No button behavior or animations.",
+    "Do not change the success screen wording unless required to display the name there (not requested).",
+    "Do not revert the main heading back to Valentine-themed phrasing."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

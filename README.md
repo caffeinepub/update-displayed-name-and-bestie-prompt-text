@@ -1,2 +1,3 @@
-# update-displayed-name-and-bestie-prompt-text
-Exported from Caffeine project: Update displayed name and bestie prompt text
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

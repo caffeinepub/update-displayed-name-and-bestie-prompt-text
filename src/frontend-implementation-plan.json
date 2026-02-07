@@ -1,0 +1,23 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Display “Maniha” on the home screen",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Show the name “Maniha” in the home screen content while keeping the main heading text unchanged.",
+      "acceptanceCriteria": [
+        "On the initial/home screen, the name \"Maniha\" is displayed in the main content area (not only in metadata like the HTML title).",
+        "The main question heading remains exactly: \"Will you be my bestie forever?\".",
+        "All user-facing text remains in English (the name \"Maniha\" is displayed as provided)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Update the home screen main content to visibly display the name \"Maniha\" (e.g., as a subtitle/line near the existing heading) while keeping the heading text exactly \"Will you be my bestie forever?\" and leaving existing Yes/No behavior and animations unchanged."
+        }
+      ]
+    }
+  ]
+}

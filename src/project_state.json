@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Project to update Valentine page copy: replace displayed name from “Bisma” to “Maniha” and update the main prompt text to “Will you be my bestie forever?” (instead of the previous Valentine phrasing).",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-replace-the-displayed-name-bisma-with-maniha-in-the-main-valentine-question-heading-on-the-home-screen",
+      "title": "Replace the displayed name \"Bisma\" with \"Maniha\" in the main Valentine question heading on the home screen.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-main-valentine-question-text-on-the-home-screen-to-use-the-phrase-will-you-be-my-valentine-bestie-including-the-comma-while-keeping-the-personalized-name-maniha-as-part-of-the-question-heading",
+      "title": "Update the main Valentine question text on the home screen to use the phrase “Will you be my valentine, bestie?” (including the comma), while keeping the personalized name “Maniha” as part of the question heading.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-home-screen-s-main-question-heading-to-display-exactly-will-you-be-my-bestie-forever-and-remove-the-personalized-name-and-valentine-phrasing-from-that-heading",
+      "title": "Update the home screen’s main question heading to display exactly: “Will you be my bestie forever?” and remove the personalized name and Valentine phrasing from that heading.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-post-success-screen-copy-to-remove-valentine-specific-wording-so-it-matches-the-bestie-forever-theme-keep-all-user-facing-text-in-english",
+      "title": "Update the post-success screen copy to remove Valentine-specific wording so it matches the “bestie forever” theme (keep all user-facing text in English).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-name-maniha-to-the-home-screen-content-so-it-is-visibly-displayed-to-the-user-while-keeping-the-main-heading-text-exactly-will-you-be-my-bestie-forever",
+      "title": "Add the name \"Maniha\" to the home screen content so it is visibly displayed to the user while keeping the main heading text exactly \"Will you be my bestie forever?\".",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Update site/app content to change the displayed name from “Bisma” to “Maniha”",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Update the draft/main prompt text to “Will you be my bestie forever?”",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Update displayed name and bestie prompt text",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

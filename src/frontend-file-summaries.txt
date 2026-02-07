@@ -1,0 +1,7 @@
+{
+  "frontend/src/App.tsx": "Main application component that displays the name \"Maniha\" followed by the question \"Will you be my bestie forever?\" with interactive Yes/No buttons over a full-screen background image, where the Yes button grows larger each time No is clicked, and shows a success message when Yes is clicked.",
+  "frontend/src/components/FloatingHearts.tsx": "Component that renders animated floating hearts in the background with randomized positions, sizes, and animation timings for a romantic atmosphere.",
+  "frontend/src/components/SuccessMessage.tsx": "Success screen component that displays a celebratory message with confetti hearts, sparkles, and decorative elements over the same full-screen background image when the user clicks Yes, with copy focused on the bestie forever theme.",
+  "frontend/src/index.css": "Global styles with Valentine's Day color palette using OKLCH colors (pinks, reds) and custom animations for hearts, floating, pulsing, confetti, and other romantic effects.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Valentine's Day color tokens for the romantic theme including light, medium, dark, and accent variations."
+}
